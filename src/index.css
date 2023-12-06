@@ -7,3 +7,21 @@
   line-height: 1.5;
   font-weight: 400;
 }
+@layer base {
+  * {
+    @apply box-border list-none p-0 m-0 scroll-smooth;
+  }
+
+  body {
+    @apply bg-dark-1 text-white min-h-screen font-inter;
+  }
+}
+@layer components {
+  .shad-input {
+    @apply h-12 bg-dark-4 border-none placeholder:text-light-4 focus-visible:ring-1 focus-visible:ring-offset-1 ring-offset-light-3 !important;
+  }
+  /* Button */
+  .shad-button_primary {
+    @apply bg-primary-500 hover:bg-primary-500 text-light-1 flex gap-2 !important;
+  }
+}
