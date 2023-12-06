@@ -46,4 +46,14 @@ module.exports = {
       },
     ],
   },
+  'import/extensions': [
+    'error',
+    'always',
+    {
+      ts: 'never',
+      tsx: 'never',
+      js: 'never',
+      jsx: 'never',
+    },
+  ],
 };
